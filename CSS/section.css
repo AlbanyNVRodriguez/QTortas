@@ -1,0 +1,689 @@
+/*----ESTILOS GENERALES----*/
+.section {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.section > * {
+    margin-bottom: 5px;
+}
+.section .poste {
+    width: 110%;
+    height: 5px;
+    margin: auto;
+    background: url(../src/iconos/diagonal-stripes.svg);
+    border-radius: 20px;
+    border: 1px solid white;
+}
+.poste::before {
+    content: "";
+    background: var(--colorPrimario);
+    height: 20px;
+    width: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: 0px;
+
+}
+.section .cartel {
+    background: #262626;
+    margin: auto;
+    width: 30%;
+    height: 50px;
+    color: white;
+    font-family: "Fredericka the Great", cursive;
+    font-size: 1.8em;
+    line-height: 3em;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 20px 10px;
+    margin-bottom: 15px;
+    user-select: none;
+}
+.section .content-class {
+    margin-bottom: 50px;
+    position: relative;
+}
+.section .content-class-articles {
+    background: rgba(0, 0, 0, .3);
+    border-radius: 20px;
+    border: double 5px var(--colorT_2);
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.section .catalogo-articles{
+    display: block;
+    background: rgba(255, 255, 255, .1); 
+}
+.section .article {
+    margin: 5px;
+    transition: all .1s ease;
+    width: 23%;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px black;
+    
+    position: relative;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.section .article:hover,
+.section .article:focus,
+.section .article:active {
+    text-shadow: 0px 1px 2px black;
+    
+    box-shadow: none;
+    cursor: pointer;
+    z-index: 5;
+    -webkit-transform: scale(1);
+    transform: scale(1.07);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+.section .article::before{
+    content: "";
+    background-image: url(../src/iconos/logo.svg);
+    background-repeat: no-repeat;
+    height: 30%;
+    width: 30%;
+    
+    opacity: .5;
+    position: absolute;
+    top: -10px;
+    left: -15px;
+}
+.section .article::after{
+    content: "";
+    height: 30%;
+    width: 30%;
+    opacity: .5;
+    position: absolute;
+    bottom: 50px;
+}
+.section .article:hover::before{
+    opacity: 1;
+}
+.section .article:hover::after{
+    filter: brightness(90%);
+    opacity: 1;
+}
+.section .article .art-img{
+    width: 100%;
+    height: 80%;
+    
+}
+.section .article .art-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    
+}
+.section .article .art-texto{  
+    font-weight: 500;
+    text-transform: capitalize;
+    color:white;
+    border-radius: 0px 0px 20px 20px;
+    width: 100%;
+    height: 20%;
+    text-align: center;   
+}
+.section .entregas .article::after{
+    background: url(../src/iconos/entregas.svg) no-repeat;
+    bottom: 30px;
+    left: 2px;
+}
+.section .entregas-articles .art-texto{
+    background: rgb(218,1,88);
+    background: linear-gradient(0deg, rgba(218,1,88,1) 22%, rgba(139,1,57,1) 94%);
+}
+.section .entregas-articles .art-texto h2{  
+    font-family: 'Dancing Script',cambria, cursive;
+    font-size: 2.6em;
+}
+/*--------------------------------------------*/
+.content-class-tortas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.content-class-tortas .art-texto h2{
+    font-family: Raleway,cambria,cursive;
+    font-size: 2em;
+}
+.content-class-tortas .art-texto h3{
+    font-family: 'Dancing Script',cambria, cursive;
+    font-size: 2.3em;
+}
+.content-class .tortas-caseras{
+    border-radius:20px 20px 0 0;
+}
+.content-class .tortas-caseras .article{
+    box-shadow:2px 2px 5px rgba(200,0,0,.8);
+}
+.content-class .tortas-caseras .article::after{
+     background: url(../src/iconos/termometro-caliente.svg) no-repeat;
+}
+.content-class .tortas-frias{
+    border-radius:0px 0px 20px 20px;  
+}
+.content-class .tortas-frias .article{
+    box-shadow:2px 2px 5px rgba(0,0,200,.8);
+}
+.content-class .tortas-frias .article::after{
+     background: url(../src/iconos/termometro-frio.svg) no-repeat;
+}
+
+.tortas-caseras .art-texto{
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,0.8) 0%, rgba(152,1,0,0.8) 100%);
+}
+.tortas-frias   .art-texto{
+    background: rgb(9,9,121);
+    background: linear-gradient(0deg, rgba(9,9,121,0.8) 0%, rgba(2,0,36,0.8) 100%);
+}
+
+
+
+
+/*-----GOOGLE MAP-------*/
+.content-class-articles .google-map {
+    width: 100%;
+    height: 400px;
+}
+.google-map-iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+/*------VENTANA MODAL----------*/
+.modal-bg{
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: modal 500ms linear; 
+    z-index: 50;
+}
+.modal-bg.activa{
+    display: block;
+    visibility: visible;
+}
+.modal-g{
+    display: none;
+    visibility: hidden;
+    z-index: 90;
+    animation: modal 500ms linear;
+    width: 100%;
+    height: 100%;
+}
+.modal-g.activa{
+    display: block;
+    visibility: visible;
+}
+.modal-g::before{
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 120px;
+    height: 120px;
+    background: url(../src/iconos/logo.svg) no-repeat;  
+    z-index: 101;
+}
+.modal-g::after{
+    position: fixed;
+    left: 2%;
+    bottom: 15%;
+    content: "";
+    width: 60px;
+    height: 120px;
+    animation:arriba-abajo 3000ms alternate infinite ; 
+    z-index: 101;
+}
+.tortas-caseras .modal-g::after{
+    background: url(../src/iconos/termometro-caliente.svg) no-repeat;
+}
+.tortas-frias .modal-g::after{
+    background: url(../src/iconos/termometro-frio.svg) no-repeat;
+}
+.cerrar{
+    box-shadow: 5px 5px 5px rgba(0,0,0,.8),-5px 0px 5px rgba(0,0,0,.8),0px -5px 5px rgba(0,0,0,.8);
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    background: white;
+    border-radius: 50%;
+    display: block;
+    width:50px;
+    height: 50px;
+    color:black;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    animation:pulse 1s infinite alternate;
+    cursor: pointer;
+    z-index: 101;
+}
+.cerrar:hover{
+    transition:all 1ms linear;
+    color: rgba(255,0,0,.9);
+}
+.modal{
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.8),-5px 0px 5px rgba(0,0,0,.8),0px -5px 5px rgba(0,0,0,.8);
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    background:url(../src/catalogo/modal-content-2.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.modal-img{
+    position: relative;
+    width:50%;
+    height: 100%;
+    display: flex;
+    border-radius: 10px 10px 10px 20px ;
+}
+.modal-img img{
+    margin:auto;
+    width:95%;
+    height: 95%;
+    border-radius:20px ;
+}
+.modal-content{
+    font-family:"Fredericka the Great", cursive;
+    width:50%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:  space-between;
+    z-index: 10;
+    border-left: solid black 6px;
+    background: url(../src/catalogo/modal-content-2.jpg) no-repeat ;
+    background-size: cover;
+}
+.modal-content h2{
+    font-size: 3.6em;
+    color:white;
+    text-shadow: 5px 5px 2px black;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.modal-content p{
+    font-size: 1.8em;
+    color:white;
+    text-shadow: 5px 5px 2px black;  
+    overflow: auto;
+    width: 100%;
+    height: auto;
+}
+.modal-content p::-webkit-scrollbar{
+    background: none;
+    width: 1px;
+}
+.modal-content p::-webkit-scrollbar-thumb{
+    background: white;
+    visibility: hidden;
+}
+.modal-content-redes{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 30%;
+}
+.modal-content-redes a{
+    margin: 5px;
+    text-decoration: none;
+    display: block;
+    width:60px;
+    height:60px;
+    animation:pulse .5s infinite alternate ;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px black;
+}
+.modal-content-redes img{
+    width: 100%;
+    height: 100%;
+}
+.modal-content-redes a:hover,
+.modal-content-redes a:active{
+    animation: none;
+    transition: all 1s linear;
+    transform: scale(1.15);
+    border:solid black 1px;
+}
+.modal-content-redes a:nth-child(1){
+    animation-delay: .5s;
+}
+.modal-content-redes a:nth-child(2){
+    animation-delay: 1s;
+}
+.modal-content-redes a:nth-child(3){
+    animation-delay: 1.5s;
+}
+.modal-content-redes a:nth-child(4){
+    animation-delay: 2s;
+}
+
+.modal-content-redes a:nth-child(1):hover,
+.modal-content-redes a:nth-child(1):active{
+    transition: .1s;
+    background: rgba(0,0,255,.5);
+}
+.modal-content-redes a:nth-child(2):hover,
+.modal-content-redes a:nth-child(2):active{
+    transition: .1s;
+    background: purple;
+}
+.modal-content-redes a:nth-child(3):hover,
+.modal-content-redes a:nth-child(3):active{
+    transition: .1s;
+    background: rgba(0,255,0,.5);
+}
+.modal-content-redes a:nth-child(4):hover,
+.modal-content-redes a:nth-child(4):active{
+    transition: .1s;
+    background: rgba(255,0,0,.5);
+}
+/*------------------------------*/
+/*Laptop o pc*/
+@media(max-width:800px) {
+    
+}
+@media(max-width:700px) {
+    .section .article{
+        width:30% ;
+    }
+    
+    .modal-content h2{
+        font-size: 30px;
+    }
+    .modal-content p{
+        font-size: 14px;
+    }
+}
+/*TABLET*/
+@media(max-width:600px) {
+    .section .article{
+        width:40% ;
+    }
+    .section .cartel {
+        width: 70%;
+    }
+    .section .ubicacion{
+        margin: 0;
+        margin-bottom: 40px;
+    } 
+    
+    .modal-g::before{
+        width: 90px;
+        height: 90px;
+    }
+    .modal-g::after{
+        width: 40px;
+        height: 90px;
+    }
+    .cerrar{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+    .modal-img{
+        width:60%;
+    }
+    .modal-content{
+        width:40%;
+        justify-content:  space-around;
+    }
+    .modal-content-redes{
+        flex-flow: row wrap;
+    }
+    
+}
+@media(max-width:500px){
+    .modal-g::after{
+        left: 0; 
+    }
+    .cerrar{
+        top:0;
+        right: 0;
+    }
+    .modal{
+        width: 95%;
+        height: 95%;
+        top:2.5%;
+        left:2.5%;
+    }
+    .modal-img{
+        width:70%;
+        height:100%;
+    }
+    .modal-img img{
+        width:100%;
+        height: 100%;
+    }
+    .modal-content{
+        width:30%;
+    }
+    .modal-content h2{
+        font-size: 24px;
+    }
+    .modal-content p{
+        font-size: 14px;
+        height: 55%;
+    }
+    .modal-content-redes a{
+        width: 40px;
+        height: 40px;
+    }
+    
+}
+@media(max-width:475px){
+    .catalogo-articles .catalogo-articles-catel{
+        width: 90%;
+        height: 40px;        
+    }  
+    .section .cartel {
+        width: 90%;
+    }
+    .section .content-class-articles {
+        width: 100%;
+        border-radius: 0px;
+    }   
+    .section .article {
+        width: 47%;
+        box-shadow: 2px 1px 2px black;
+    }
+
+    .section .article:last-child {
+        border-bottom: none;
+    }
+
+    .section .art-img img {
+        border-radius: 0px;
+        object-fit: cover;
+    }
+    .section .art-texto{
+        border-radius: 0px;
+    }
+    
+    .google-map .google-map-iframe{
+        border-radius: 0px;
+        height: 100%;
+    }
+    
+    .modal-content h2{
+        font-size: 20px;
+    }
+}
+@media(max-width:400px){
+    .modal-g::before{
+        width: 80px;
+        height: 80px;
+    }
+    .modal-g::after{
+        width: 30px;
+        height: 80px;
+    }
+    .cerrar{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 18px;
+    }
+    .modal-img{
+        width:60%;
+        height:100%;
+    }
+    .modal-img img{
+        width:100%;
+        height: 80%;
+    }
+    .modal-content{
+        width:40%;
+    }
+}
+@media(max-height:500px){
+    .modal {
+        background: red;
+    }
+}
+/* @media(min-height:500px){
+    .modal{
+        width: 95%;
+        height: 80%;
+        top:10%;
+        left: 2.5%;
+    }
+    .modal-g::before{
+        top: 2.5%;
+        left: -5%;  
+    }
+    .cerrar{
+        top: 7%;   
+    }
+}
+@media(min-height:600px){
+    .modal{
+        width: 95%;
+        height: 65%;
+        top:17.5%;
+        left: 2.5%;
+    }
+    .modal-g::before{
+        top: 12%;
+        left: -5%;  
+    }
+    .cerrar{
+        top: 15%;   
+    }
+}
+@media(min-height:700px){
+    .modal{
+        width: 95%;
+        height: 60%;
+        top:20%;
+        left: 2.5%;
+    }
+    .modal-g::before{
+        top: 17%;
+        left: -7%;
+        
+    }
+    .cerrar{
+        top: 17%;
+        
+        
+    }
+} */
+/*TELEFONOS*/
+@media(max-width:342px) {
+    .section .article{
+        width: 45%;
+    }
+    
+    .modal-g::after{
+        bottom: 50%;
+    }
+    .modal{
+        flex-flow: column nowrap;
+    }
+    .modal-img{
+        width:100%;
+        height:50%;
+    }
+    .modal-img img{
+        width:100%;
+        height: 100%;
+        border-radius:0;
+    }
+    .modal-content{
+        width:100%;
+        height: 50%;
+        border: none;
+       
+    }
+}
+@media(max-width:300px) {
+    .section .article{
+       width: 80%;      
+    } 
+    .modal-g::before{
+        width: 60px;
+        height: 60px;
+    }
+    .modal-g::after{
+        width: 20px;
+        height: 50px;
+    }
+    .cerrar{
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .modal{
+        width: 98%;
+        height: 98%;
+        top:1%;
+        left: 1%;
+    }
+}
+@media(max-width:200px) {
+    .section .article{
+       width: 95%;      
+    } 
+    
+    .modal-content-redes a{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media(max-width:150px) {
+    .section .article{
+       width: 100%;      
+    } 
+}

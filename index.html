@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Qtortas</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="src/iconos/logo_globo.svg" sizes="any">
+    <meta name="description" content="El Qtortas proporciona información acerca de los productos disponibles en nuestra tienda oficial, permitiendo realizar pedidos en la comodidad de tu casa u oficina">
+    <meta name="author" content="Albany Nohemi Vergel Rodriguez" />
+    <meta name="copyright" content="Qtortas" />
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fredericka+the+Great&family=Raleway&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- ESTYLES -->
+    <link rel="stylesheet" href="CSS/materialize.css">
+
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="modal-bg"></div>
+        <header class="header">
+            <!--MENU-->
+            <div class="menu-principal">
+                <!--MENU DE TABLET Ó TELEFONO-->
+                <sidebar id="sidebar" class="">
+                    <di class="toggle-btn">
+                        <img src="src/iconos/logo_borde.svg" alt="toggle" width="15%">
+                    </di>
+                    <ul>
+                        <li>
+                            <img src="src/iconos/logo.svg" alt="" width="40%">
+                        </li>
+                        <li><a href="#">&#9733; inicio &#9733;</a></li>
+                        <li><a href="#catalogo-ancla">&#10084; catalogo &#10084;</a></li>
+                        <li><a href="#entregas-ancla">&#9733; entregas &#9733;</a></li>
+                        <li><a href="#ubicacion-ancla">&#9873; ubicacíon &#9873;</a></li>
+                        <li><a href="tel:+584147591914" class="pedido">ordena ya! &#10162;</a></li>
+                    </ul>
+                    <div class="menu-etc">
+                        <div class="menu-otros menu-contactos">
+                            <h2 class="h-texto">contactanos</h2>
+                            <div class="menu-red">
+                                <a href="https://api.whatsapp.com/send?phone=+584147591914" target="_blank"><img src="src/iconos/whatsapp_icon_redondo.svg" alt="whatsapp"></a>
+                            </div>
+                        </div>
+                        <div class="menu-otros menu-siguenos">
+                            <h2 class="h-texto">siguenos</h2>
+                            <div class="menu-red">
+                                <a href="https://www.facebook.com/QTortasVe" target="_blank"><img src="src/iconos/facebook_icon_redondo.svg" alt="facebook"></a>
+                            </div>
+                            <div class="menu-red">
+                                <a href="https://www.instagram.com/qtortas/?hl=es-la" target="_blank"> <img src="src/iconos/instagram_icon_redondo.svg" alt="instagram"></a>
+                            </div>
+                            <div class="menu-red">
+                                <a href="https://twitter.com/qtortasve?lang=es" target="_blank"><img src="src/iconos/twitter_icon_redondo.svg" alt="twitter"></a>
+                            </div>
+                        </div>
+                    </div>
+                </sidebar>
+                <!--MENU DE LAPTOP Ó PC-->
+                <nav class="menu">
+                    <ul class="lista" id="lista">
+                        <li class="lista-item li0">
+                            <img src="src/iconos/logo_letras.svg" alt="logo">
+                        </li>
+                        <li class="lista-item li1">
+                            <a href="#" class="lista-link ll1">INICO</a>
+                        </li>
+                        <li class="lista-item li2">
+                            <a href="#catalogo-ancla" class="lista-link">CATALOGO</a>
+                        </li>
+                        <li class="lista-item li3">
+                            <a href="#entregas-ancla" class="lista-link">ENTREGAS</a>
+                        </li>
+                        <li class="lista-item li4">
+                            <a href="#ubicacion-ancla" class="lista-link">UBICACIÓN</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--CORRUSEL(MATERIALIZE) DEL HEADER-->
+            <div class="carousel">
+
+                <a href="#" class="carousel-item">
+                    <h2 class="carousel-text subtitulo">Dulce</h2>
+                    <div class="carousel-text linea-division">
+                    </div>
+                    <p class="carousel-text sabor">
+                        <i>Quesillo + Gelatina + Igo</i>
+                    </p>
+                    <img src="src/carousel/dulce-quesillo-igo-lechoza.jpg" alt="Donas Glaseadas">
+                </a>
+
+                <a href="#" class="carousel-item">
+                    <h2 class="carousel-text subtitulo">Mini Torta</h2>
+                    <div class="carousel-text linea-division">
+                    </div>
+                    <p class="carousel-text sabor">
+                        <i>Chocolate + Vainilla</i>
+                    </p>
+                    <img src="src/carousel/Mini-torta-casera2.jpg" alt="Pastel de Chocolate">
+                </a>
+
+                <a href="#" class="carousel-item">
+                    <h2 class="carousel-text subtitulo">Torta</h2>
+                    <div class="carousel-text linea-division">
+                    </div>
+                    <p class="carousel-text sabor">
+                        <i>3 Leches </i>
+                    </p>
+                    <img src="src/carousel/torta-3leches.jpg" alt="Muffin-Cupcake-Ponquesito-Chocolate">
+                </a>
+
+                <a href="#" class="carousel-item">
+                    <h2 class="carousel-text subtitulo">Torta</h2>
+                    <div class="carousel-text linea-division">
+                    </div>
+                    <p class="carousel-text sabor">
+                        <i>Ojaldre</i>
+                    </p>
+                    <img src="src/carousel/torta-ojaldre.jpg" alt="Donas de Chocolate">
+                </a>
+
+                <a href="#" class="carousel-item">
+                    <h2 class="carousel-text subtitulo">Torta</h2>
+                    <div class="carousel-text linea-division">
+                    </div>
+                    <p class="carousel-text sabor">
+                        <i>Gelatina + Quesillo</i>
+                    </p>
+                    <img src="src/carousel/torta-gelatina-quesillo-torta.jpg" alt="Muffins de Vainilla">
+                </a>
+            </div>
+        </header>
+        <section class="section">
+            <!--CATALOGO-->
+            <div class="content-class catalogo">
+                <a href="" id="catalogo-ancla"></a>
+                <div class="poste poste-catalogo"></div>
+                <div class="cartel catalogo-titulo">
+                    <h2>CATALOGO</h2>
+                </div>
+                <!--CONTENEDOR DE LOS ARTICULOS-->
+                <div class="content-class-articles catalogo-articles">
+                    <!--TORTAS CASERAS-->
+                    <div class="content-class-tortas tortas-caseras">
+                        <article class="article art-catalogo">
+                            <div class="art art-img">
+                                <img src="src/catalogo/tortas_caseras/Torta-Casera-Marmoleada%20(1).jpg" alt="Torta-Casera-Marmoleada">
+                            </div>
+                            <div class="art art-texto">
+                                <h2>torta casera </h2>
+                                <h3>marmoleada</h3>
+                            </div>
+                        </article>
+                        <div class="modal-g">
+                            <h4 class="cerrar">X</h4>
+                            <div class="modal">
+                                <div class="modal-img casera">
+                                    <img src="src/catalogo/tortas_caseras/Torta-Casera-Marmoleada%20(1).jpg" alt="">
+                                </div>
+                                <div class="modal-content">
+                                    <h2>Torta Casera<br>Marmoleada</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque omnis laudantium quaerat est fuga, sint doloribus magnam qui excepturi pariatur vero possimus beatae iste reprehenderit dolorem sunt illo adipisci fugiat?
+                                    </p>
+                                    <div class="modal-content-redes">
+                                        <a href="https://www.facebook.com/QTortasVe" target="_blank"><img src="src/iconos/facebook_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="https://www.instagram.com/qtortas/?hl=es-la" target="_blank"><img src="src/iconos/instagram_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="https://api.whatsapp.com/send?phone=+584147591914" target="_blank"><img src="src/iconos/whatsapp_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="tel:+584147591914"><img src="src/iconos/telefono_icon_redondo-tiza.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <article class="article art-catalogo">
+                            <div class="art art-img">
+                                <img src="src/catalogo/tortas_caseras/Torta-Casera-Marmoleada%20(2).jpg" alt="Torta-Casera-Marmoleada">
+                            </div>
+                            <div class="art art-texto">
+                                <h2>torta casera</h2>
+                                <h3>marmoleada</h3>
+                            </div>
+                        </article>
+                        <div class="modal-g">
+                            <h4 class="cerrar">X</h4>
+                            <div class="modal">
+                                <div class="modal-img casera">
+                                    <img src="src/catalogo/tortas_caseras/Torta-Casera-Marmoleada%20(2).jpg" alt="">
+                                </div>
+                                <div class="modal-content">
+                                    <h2>Torta Casera<br>Marmoleada</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque omnis laudantium quaerat est fuga, sint doloribus magnam qui excepturi pariatur vero possimus beatae iste reprehenderit dolorem sunt illo adipisci fugiat?
+                                    </p>
+                                    <div class="modal-content-redes">
+                                        <a href="https://www.facebook.com/QTortasVe" target="_blank"><img src="src/iconos/facebook_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="https://www.instagram.com/qtortas/?hl=es-la" target="_blank"><img src="src/iconos/instagram_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="https://api.whatsapp.com/send?phone=+584147591914" target="_blank"><img src="src/iconos/whatsapp_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="tel:+584147591914"><img src="src/iconos/telefono_icon_redondo-tiza.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <article class="article art-catalogo">
+                            <div class="art art-img">
+                                <img src="src/catalogo/tortas_caseras/Torta-Casera-Marmoleada%20(3).jpg" alt="Torta-Casera-Marmoleada">
+                            </div>
+                            <div class="art art-texto">
+                                <h2>torta casera</h2>
+                                <h3>marmoleada</h3>
+                            </div>
+                        </article>
+                        <div class="modal-g">
+                            <h4 class="cerrar">X</h4>
+                            <div class="modal">
+
+                                <div class="modal-img casera">
+                                    <img src="src/catalogo/tortas_caseras/Torta-Casera-Marmoleada%20(3).jpg" alt="Torta-Casera-Marmoleada">
+                                </div>
+                                <div class="modal-content">
+                                    <h2>Torta Casera<br>Marmoleada</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque omnis laudantium quaerat est fuga, sint doloribus magnam qui excepturi pariatur vero possimus beatae iste reprehenderit dolorem sunt illo adipisci fugiat?
+                                    </p>
+                                    <div class="modal-content-redes">
+                                        <a href="https://www.facebook.com/QTortasVe" target="_blank"><img src="src/iconos/facebook_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="https://www.instagram.com/qtortas/?hl=es-la" target="_blank"><img src="src/iconos/instagram_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="https://api.whatsapp.com/send?phone=+584147591914" target="_blank"><img src="src/iconos/whatsapp_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="tel:+584147591914"><img src="src/iconos/telefono_icon_redondo-tiza.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <article class="article art-catalogo">
+                            <div class="art art-img"><img src="src/catalogo/tortas_caseras/Torta-Casera-Peque%C3%B1a-Marmoleada.jpg" alt="Torta-Casera-Pequeña-Marmoleada"></div>
+                            <div class="art art-texto">
+                                <h2>torta casera</h2>
+                                <h3>marmoleada</h3>
+                            </div>
+
+                        </article>
+                        <div class="modal-g">
+                            <h4 class="cerrar">X</h4>
+                            <div class="modal">
+
+                                <div class="modal-img casera">
+                                    <img src="src/catalogo/tortas_caseras/Torta-Casera-Peque%C3%B1a-Marmoleada.jpg" alt="Torta-Casera-Pequeña-Marmoleada">
+                                </div>
+                                <div class="modal-content">
+                                    <h2>Torta Casera<br>Marmoleada</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque omnis laudantium quaerat est fuga, sint doloribus magnam qui excepturi pariatur vero possimus beatae iste reprehenderit dolorem sunt illo adipisci fugiat?
+                                    </p>
+                                    <div class="modal-content-redes">
+                                        <a href="https://www.facebook.com/QTortasVe" target="_blank"><img src="src/iconos/facebook_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="https://www.instagram.com/qtortas/?hl=es-la" target="_blank"><img src="src/iconos/instagram_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="https://api.whatsapp.com/send?phone=+584147591914" target="_blank"><img src="src/iconos/whatsapp_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="tel:+584147591914"><img src="src/iconos/telefono_icon_redondo-tiza.svg" alt=""></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--TORTAS FRIAS-->
+                    <div class="content-class-tortas tortas-frias">
+                        <article class="article art-catalogo">
+                            <div class="art art-img">
+                                <img src="src/catalogo/tortas_frias/Torta-Fria-Rellena-Oreo%20(1).jpg" alt="Torta-Fria-Rellena-Oreo">
+                            </div>
+                            <div class="art art-texto">
+                                <h2>torta Fria</h2>
+                                <h3>Rellena con oreo</h3>
+                            </div>
+                        </article>
+                        <div class="modal-g">
+                            <h4 class="cerrar">X</h4>
+                            <div class="modal">
+                                <div class="modal-img fria">
+                                    <img src="src/catalogo/tortas_frias/Torta-Fria-Rellena-Oreo%20(1).jpg" alt="Torta-Fria-Rellena-Oreo">
+                                </div>
+                                <div class="modal-content">
+                                    <h2>Torta Fria <br> Rellena de Oreo</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque omnis laudantium quaerat est fuga, sint doloribus magnam qui excepturi pariatur vero possimus beatae iste reprehenderit dolorem sunt illo adipisci fugiat?
+                                    </p>
+                                    <div class="modal-content-redes">
+                                        <a href="https://www.facebook.com/QTortasVe" target="_blank"><img src="src/iconos/facebook_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="https://www.instagram.com/qtortas/?hl=es-la" target="_blank"><img src="src/iconos/instagram_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="https://api.whatsapp.com/send?phone=+584147591914" target="_blank"><img src="src/iconos/whatsapp_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="tel:+584147591914"><img src="src/iconos/telefono_icon_redondo-tiza.svg" alt=""></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <article class="article art-catalogo">
+                            <div class="art art-img">
+                                <img src="src/catalogo/tortas_frias/Torta-Fria-Chocolate-Quesillo.jpg" alt="Torta-Fria-Chocolate-Quesillo">
+                            </div>
+                            <div class="art art-texto">
+                                <h2>torta fria</h2>
+                                <h3>chocolate + quesillo</h3>
+                            </div>
+                        </article>
+                        <div class="modal-g">
+                            <h4 class="cerrar">X</h4>
+                            <div class="modal">
+                                <div class="modal-img fria">
+                                    <img src="src/catalogo/tortas_frias/Torta-Fria-Chocolate-Quesillo.jpg" alt="Torta-Fria-Chocolate-Quesillo">
+                                </div>
+                                <div class="modal-content">
+                                    <h2>Torta Fria<br>Chocolate con Quesillo</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque omnis laudantium quaerat est fuga, sint doloribus magnam qui excepturi pariatur vero possimus beatae iste reprehenderit dolorem sunt illo adipisci fugiat?
+                                    </p>
+                                    <div class="modal-content-redes">
+                                        <a href="https://www.facebook.com/QTortasVe" target="_blank"><img src="src/iconos/facebook_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="https://www.instagram.com/qtortas/?hl=es-la" target="_blank"><img src="src/iconos/instagram_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="https://api.whatsapp.com/send?phone=+584147591914" target="_blank"><img src="src/iconos/whatsapp_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="tel:+584147591914"><img src="src/iconos/telefono_icon_redondo-tiza.svg" alt=""></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <article class="article art-catalogo">
+                            <div class="art art-img">
+                                <img src="src/catalogo/tortas_frias/Torta-Fria-Rellena-Oreo%20(2).jpg" alt="Torta-Fria-Rellena-Oreo">
+                            </div>
+                            <div class="art art-texto">
+                                <h2>torta fria</h2>
+                                <h3>Rellena con oreo</h3>
+                            </div>
+
+                        </article>
+                        <div class="modal-g">
+                            <h4 class="cerrar">X</h4>
+                            <div class="modal">
+                                <div class="modal-img fria">
+                                    <img src="src/catalogo/tortas_frias/Torta-Fria-Rellena-Oreo%20(2).jpg" alt="Torta-Fria-Rellena-Oreo">
+                                </div>
+                                <div class="modal-content">
+                                    <h2>Torta Fria<br>Rellena de Oreo</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque omnis laudantium quaerat est fuga, sint doloribus magnam qui excepturi pariatur vero possimus beatae iste reprehenderit dolorem sunt illo adipisci fugiat?
+                                    </p>
+                                    <div class="modal-content-redes">
+                                        <a href="https://www.facebook.com/QTortasVe" target="_blank"><img src="src/iconos/facebook_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="https://www.instagram.com/qtortas/?hl=es-la" target="_blank"><img src="src/iconos/instagram_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="https://api.whatsapp.com/send?phone=+584147591914" target="_blank"><img src="src/iconos/whatsapp_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="tel:+584147591914"><img src="src/iconos/telefono_icon_redondo-tiza.svg" alt=""></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <article class="article art-catalogo">
+                            <div class="art art-img">
+                                <img src="src/catalogo/tortas_frias/Torta-Fria-3Leches.jpg" alt="Torta-Fria-3Leches">
+                            </div>
+                            <div class="art art-texto">
+                                <h2>torta fria</h2>
+                                <h3>tres leches</h3>
+                            </div>
+
+                        </article>
+                        <div class="modal-g">
+                            <h4 class="cerrar">X</h4>
+                            <div class="modal">
+                                <div class="modal-img fria">
+                                    <img src="src/catalogo/tortas_frias/Torta-Fria-3Leches.jpg" alt="Torta-Fria-3Leches">
+                                </div>
+                                <div class="modal-content">
+                                    <h2>Torta Fria<br>3 Leches</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque omnis laudantium quaerat est fuga, sint doloribus magnam qui excepturi pariatur vero possimus beatae iste reprehenderit dolorem sunt illo adipisci fugiat?
+                                    </p>
+                                    <div class="modal-content-redes">
+                                        <a href="https://www.facebook.com/QTortasVe" target="_blank"><img src="src/iconos/facebook_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="https://www.instagram.com/qtortas/?hl=es-la" target="_blank"><img src="src/iconos/instagram_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="https://api.whatsapp.com/send?phone=+584147591914" target="_blank"><img src="src/iconos/whatsapp_icon_redondo-tiza.svg" alt=""></a>
+                                        <a href="tel:+584147591914"><img src="src/iconos/telefono_icon_redondo-tiza.svg" alt=""></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--ENTREGAS-->
+            <div class="content-class entregas">
+                <a href="" id="entregas-ancla"></a>
+                <div class="poste poste-entregas"></div>
+                <div class="cartel entregas-titulo">
+                    <h2>ENTREGAS</h2>
+                </div>
+                <!--CONTENEDOR DE LOS ARTICULOS-->
+                <div class="content-class-articles entregas-articles">
+                    <article class="article">
+                        <div class="art-img entregas-img">
+                            <img src="src/entregas/Torta-Fria-3Leches.jpg" alt="Torta-Fria-3Leches">
+                        </div>
+                        <div class="art art-texto">
+                            <h2>Lorem ipsum</h2>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <div class="art-img entregas-img">
+                            <img src="src/entregas/Torta-Fria-Chocolate-Quesillo.jpg" alt="Torta-Fria-Chocolate-Quesillo">
+                        </div>
+                        <div class="art art-texto">
+                            <h2>Lorem ipsum</h2>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <div class="art-img entregas-img">
+                            <img src="src/entregas/Torta-Fria-Fresas-Melocoton.jpg" alt="Torta-Fria-Fresas-Melocoton">
+                        </div>
+                        <div class="art art-texto">
+                            <h2>Lorem ipsum</h2>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <div class="art-img entregas-img">
+                            <img src="src/entregas/Torta-Fria-Rellena-Oreo.jpg" alt="Torta-Fria-Rellena-Oreo">
+                        </div>
+                        <div class="art art-texto">
+                            <h2>Lorem ipsum</h2>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!--UBICACIÓN-->
+            <div class="content-class ubicacion">
+                <a href="" id="ubicacion-ancla"></a>
+                <div class="poste poste-ubicacion"></div>
+                <div class="cartel ubicacion-titulo">
+                    <h2>UBICANOS</h2>
+                </div>
+                <!--CONTENEDOR DEL ARTICULO-->
+                <div class="content-class-articles">
+                    <!--UBICACIÓN EN EL GOOGLE MAP-->
+                    <div class="google-map">
+                        <iframe class="google-map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1972.3943960457298!2d-71.64977721063629!3d8.616265533321542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e640c399ab60497%3A0xcf0dac7df58d18c4!2sQ&#39;%20Tortas!5e0!3m2!1ses!2sve!4v1608581762686!5m2!1ses!2sve" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="redes-flotantes">
+            <a href="tel:+584147591914" class="redes-flotantes-red boton">ORDENA YA! &#10162;</a>
+            <a href="https://www.facebook.com/QTortasVe" target="_blank" class="redes-flotantes-red"><img src="src/iconos/facebook_icon_redondo-tiza.svg" alt="facebook_icon_redondo-tiza.svg"></a>
+            <a href="https://www.instagram.com/qtortas/?hl=es-la" target="_blank" class="redes-flotantes-red"><img src="src/iconos/instagram_icon_redondo-tiza.svg" alt="instagram_icon_redondo-tiza.svg"></a>
+            <a href="https://api.whatsapp.com/send?phone=+584147591914" target="_blank" class="redes-flotantes-red"><img src="src/iconos/whatsapp_icon_redondo-tiza.svg" alt="whatsapp_icon_redondo-tiza.svg"></a>
+        </div>
+        <footer class="footer">
+            <!--REDES SOCIALES-->
+            <div class="redes">
+               <div class="red facebook"><a href="https://www.facebook.com/QTortasVe" target="_blank"><img src="src/iconos/facebook_icon_globo.svg" alt="facebook"></a>
+                </div>
+                <div class="red instagram"><a href="https://www.instagram.com/qtortas/?hl=es-la" target="_blank"> <img src="src/iconos/instagram_icon_globo.svg" alt="instagram"></a>
+                </div>
+                <div class="red whatsapp"><a href="https://api.whatsapp.com/send?phone=+584147591914" target="_blank"><img src="src/iconos/whatsapp_icon_globo.svg" alt="whatsapp"></a>
+                </div>
+                <div class="red twitter"><a href="tel:+584147591914"><img src="src/iconos/telefono_icon_globo.svg" alt="twitter"></a>
+                </div>
+            </div>
+            <!--SOBRE NOSOTROS-->
+            <div class="nosotros">
+                <h4>NOSOTROS</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, expedita sequi dolor aperiam, id cum quibusdam culpa hic reprehenderit, porro laborum exercitationem neque ut quis accusamus delectus voluptate? Inventore, suscipit!
+
+                </p>
+                <div class="nosotros-img">
+
+                </div>
+            </div>
+            <!--PREGUNTAS-->
+            <div class="preguntas">
+                <h4>PREGUNTAS FRECUENTES</h4>
+                <div class="preguntas-container">
+                    <div class="item">
+                        <div class="btn-item">¿Lorem ipsum dolor sit amet?</div>
+                        <div class="item-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eligendi quibusdam, perferendis similique autem suscipit nihil necessitatibus obcaecati, architecto excepturi libero quaerat dolore dicta unde nemo assumenda! Aliquid, cumque, labore.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="btn-item">¿Lorem ipsum dolor sit amet?</div>
+                        <div class="item-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eligendi quibusdam, perferendis similique autem suscipit nihil necessitatibus obcaecati, architecto excepturi libero quaerat dolore dicta unde nemo assumenda! Aliquid, cumque, labore.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="btn-item">¿Lorem ipsum dolor sit amet?</div>
+                        <div class="item-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eligendi quibusdam, perferendis similique autem suscipit nihil necessitatibus obcaecati, architecto excepturi libero quaerat dolore dicta unde nemo assumenda! Aliquid, cumque, labore.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!--MATERIALIZE JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="JS/materialize.js"></script>
+    <!-- MAIN JS-->
+    <script type="text/javascript" src="JS/main.js"></script>
+</body>
+
+
+</html>
