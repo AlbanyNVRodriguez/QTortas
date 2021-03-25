@@ -567,9 +567,9 @@
     }
 }
 @media(max-height:500px){
-    .modal {
+    /*.modal {
         background: red;
-    }
+    }*/
 }
 /* @media(min-height:500px){
     .modal{
